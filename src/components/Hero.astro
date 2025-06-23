@@ -1,40 +1,51 @@
 ---
 const personalImageAlt = "AlexSandro Programmer"
+const phoneNumber = "573105853658";
+const message = encodeURIComponent(
+  "¡Hola Alejandro! Estoy interesado en cotizar una página web, sitio web o aplicación web/móvil. ¿Me puedes brindar más información?"
+);
+
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
+import WhatsApp from "@/components/icons/WhatsApp.astro"
 import SocialPill from "@/components/SocialPill.astro"
 import GitHub from "./icons/GitHub.astro"
 ---
 
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
-    <img
-      class="rounded-full shadow-lg size-16"
-      src="/alejandro.webp"
-      alt={personalImageAlt}
-    />
-    <a
-      href="https://www.linkedin.com/in/alejoprogrammer"
-      target="_blank"
-      rel="noopener"
-      class="flex items-center transition md:justify-center md:hover:scale-105"
-    >
-      <Badge>Disponible para trabajar freelance</Badge>
-    </a>
-  </div>
+  <img
+    class="rounded-full shadow-lg size-16"
+    src="/alejandro.webp"
+    alt={personalImageAlt}
+  />
+  <a
+    href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`}
+    target="_blank"
+    rel="noopener"
+    class="flex items-center transition md:justify-center md:hover:scale-105"
+  >
+    <Badge>🚀 ¡Contáctame y llevemos tu negocio al siguiente nivel!</Badge>
+  </a>
+</div>
+
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
     Hola, soy Alejandro Muñoz
   </h1>
   <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-blue-300 [&>strong]:text-blue-600 [&>strong]:font-bold dark:text-gray-300">+2 años de experiencia como <strong>Analista y Desarrollador de Software</strong> en <strong>Ibagué, Colombia co.</strong> Especializado en aplicaciones web y móviles, con enfoque en crear soluciones innovadoras y escalables que aportan valor real a cada sistema desarrollado.
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-blue-300 [&>strong]:text-blue-600 [&>strong]:font-bold dark:text-gray-300">+2 años de experiencia como <strong>Analista y Desarrollador de Software</strong> en <strong>Ibagué Tolima, Colombia co.</strong> Especializado en aplicaciones web y móviles, con enfoque en crear soluciones innovadoras y escalables que aportan valor real a cada sistema desarrollado.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`}>
+      <WhatsApp class="size-4" />
+      WhatsApp
+    </SocialPill>
     <SocialPill href="mailto:luisalejandrm533@gmail.com">
       <MailIcon class="size-4" />
-      Contáctame
+      E-mail
     </SocialPill>
     <SocialPill href="https://www.linkedin.com/in/alejoprogrammer">
       <LinkedInIcon class="size-4" />

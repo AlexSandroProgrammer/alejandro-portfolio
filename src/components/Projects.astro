@@ -13,7 +13,7 @@ const TAGS = {
     class: "bg-[#003159] text-white",
   },
   JS: {
-    name: "Javascript",
+    name: "JAVASCRIPT",
     class: "bg-[#003159] text-white",
   },
   PHP: {
@@ -21,24 +21,53 @@ const TAGS = {
     class: "bg-[#003159] text-white",
   },
   BOOTSTRAP: {
-    name: "Bootstrap",
+    name: "BOOTSTRAP",
     class: "bg-[#003159] text-white",
   },
-  // JQUERY: {
-  //   name: "Jquery",
-  //   class: "bg-[#003159] text-white",
-  // },
+
+  REACT_NATIVE: {
+    name: "REACT NATIVE",
+    class: "bg-[#003159] text-white",
+  },
+
+  STRAPI: {
+    name: "STRAPI",
+    class: "bg-[#003159] text-white",
+  },
+
+  MYSQL: {
+    name: "MYSQL",
+    class: "bg-[#003159] text-white",
+  },
+
+  TAILWIND_CSS: {
+    name: "TAILWIND CSS",
+    class: "bg-[#003159] text-white",
+  },
+
+  EXPO: {
+    name: "EXPO",
+    class: "bg-[#003159] text-white",
+  },
 }
 
 const PROJECTS = [
+    {
+    title: "RECOAPP",
+    description:
+      "App movil multiplataforma para manejo y control de costos de cultivos transitorios agricolas.",
+    github: "/",
+    image: "/projects/recoapp.webp",
+    tags: [TAGS.JS, TAGS.REACT_NATIVE, TAGS.EXPO, TAGS.TAILWIND_CSS, TAGS.STRAPI, TAGS.MYSQL],
+  },
   {
     title: "Colabores Urbes",
     description:
-      "Sistema desarrollado para la empresa de acueducto y alcantarillado URBES S.A.S de la ciudad de Mariquita Tolima, Colombia.",
+      "Sistema desarrollado para la empresa de acueducto y alcantarillado URBES S.A.S de la ciudad de Mariquita Tolima, Colombia co.",
     link: "https://colaboradoresurbes.shop/urbes",
     github: "https://github.com/AlexSandroProgrammer/urbes",
     image: "/projects/urbes.webp",
-    tags: [TAGS.HTML,TAGS.CSS,TAGS.JS,TAGS.PHP, TAGS.BOOTSTRAP],
+    tags: [TAGS.HTML,TAGS.CSS,TAGS.JS,TAGS.PHP, TAGS.BOOTSTRAP, TAGS.MYSQL],
   },
   {
     title: "CompromisoSE",
@@ -46,7 +75,7 @@ const PROJECTS = [
       "Desarrollo de plataforma para gestionar documentos del SGC (Sistema Gestion de la Calidad) dividos por procesos y procedimientos. Contien módulo de consulta, descargas múltiples e integración de lector PDF para visualización directa.",
     github: "https://github.com/AlexSandroProgrammer/programa_listado",
     image: "/projects/compromiso.webp",
-    tags: [TAGS.HTML,TAGS.CSS,TAGS.JS,TAGS.PHP, TAGS.BOOTSTRAP],
+    tags: [TAGS.HTML,TAGS.CSS,TAGS.JS,TAGS.PHP, TAGS.BOOTSTRAP, TAGS.MYSQL],
   },
 ]
 ---
@@ -69,7 +98,7 @@ const PROJECTS = [
           {tags.map((tag) => (
             <li>
               <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                class={`flex gap-x-2 rounded-full text-[10px] ${tag.class} py-1 px-2 `}
               >
                 {tag.name}
               </span>
