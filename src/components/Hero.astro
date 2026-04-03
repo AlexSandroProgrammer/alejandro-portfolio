@@ -5,7 +5,7 @@ const message = encodeURIComponent(
   "¡Hola Alejandro! Estoy interesado/a en cotizar tus servicios. ¿Me puedes brindar más información?"
 );
 
-const urlWhatsapp = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+const urlWhatsapp = `https://wa.me/${phoneNumber}?text=${message}`;
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
